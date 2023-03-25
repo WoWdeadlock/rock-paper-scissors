@@ -1,0 +1,10 @@
+.choice-img {
+    width: 500px;
+}
+
+.choice-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+}
