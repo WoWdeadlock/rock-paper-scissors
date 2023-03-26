@@ -9,21 +9,54 @@
 </head>
 <body>
 
-    <div class="choice-container">
-        <img src="./Assets/rock.png" alt="Rock Image" class="choice-img">
-        <h2 class="choice-title">ROCK</h2>
+    <h1 class="title">Rock, Paper, Scissors</h1>
+
+    <div class="game-board">
+
+        <div class="player-choice" id="player">
+
+            <div class="choice-container">
+                <img src="./Assets/rock.png" alt="Rock Image" class="choice-img">
+                <h2 class="choice-title">ROCK</h2>
+            </div>
+
+            <h2>Player Choice</h2>
+
+        </div>
+
+        <p class="scoreboard"><span id="player-score">1</span>-<span id="computer-score">5</span></p>
+
+        <div class="player-choice" id="computer">
+
+            <div class="choice-container">
+                <img src="./Assets/scissors.png" alt="Rock Image" class="choice-img">
+                <h2 class="choice-title">SCISSORS</h2>
+            </div>
+
+            <h2>Computer Choice</h2>
+
+        </div>
     </div>
 
-    <div class="choice-container">
-        <img src="./Assets/paper.png" alt="Rock Image" class="choice-img">
-        <h2 class="choice-title">PAPER</h2>
-    </div>
+    <div class="choices-container">
 
-    <div class="choice-container">
-        <img src="./Assets/scissors.png" alt="Rock Image" class="choice-img">
-        <h2 class="choice-title">SCISSORS</h2>
+        <h1>Select your choice: </h1>
+
+        <div class="choices">
+            <div class="choice-container">
+                <img src="./Assets/rock.png" alt="Rock Image" class="choice-img">
+                <h2 class="choice-title">ROCK</h2>
+            </div>
+            <div class="choice-container">
+                <img src="./Assets/paper.png" alt="Rock Image" class="choice-img">
+                <h2 class="choice-title">PAPER</h2>
+            </div>
+            <div class="choice-container">
+                <img src="./Assets/scissors.png" alt="Rock Image" class="choice-img">
+                <h2 class="choice-title">SCISSORS</h2>
+            </div>
+        </div>
     </div>
-    
 </body>
 <script src="./js/script.js"></script>
 </html>
