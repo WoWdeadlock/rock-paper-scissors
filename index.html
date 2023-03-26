@@ -13,24 +13,24 @@
 
     <div class="game-board">
 
-        <div class="player-choice" id="player">
+        <div class="player-choice">
 
-            <div class="choice-container">
-                <img src="./Assets/rock.png" alt="Rock Image" class="choice-img">
-                <h2 class="choice-title">ROCK</h2>
+            <div class="choice-container" id="player">
+                <img src="./Assets/unknown.png" alt="Player Choice Image" class="choice-img">
+                <h2 class="choice-title"></h2>
             </div>
 
             <h2>Player Choice</h2>
 
         </div>
 
-        <p class="scoreboard"><span id="player-score">1</span>-<span id="computer-score">5</span></p>
+        <p class="scoreboard"><span id="player-score">0</span>-<span id="computer-score">0</span></p>
 
-        <div class="player-choice" id="computer">
+        <div class="player-choice">
 
-            <div class="choice-container">
-                <img src="./Assets/scissors.png" alt="Rock Image" class="choice-img">
-                <h2 class="choice-title">SCISSORS</h2>
+            <div class="choice-container" id="compute">
+                <img src="./Assets/unknown.png" alt="Computer Choice Image" class="choice-img">
+                <h2 class="choice-title"></h2>
             </div>
 
             <h2>Computer Choice</h2>
@@ -40,22 +40,29 @@
 
     <div class="choices-container">
 
-        <h1>Select your choice: </h1>
+        <h1 id="main-text">Select your choice: </h1>
 
         <div class="choices">
-            <div class="choice-container">
+
+            <div class="valid choice-container" id="rock">
                 <img src="./Assets/rock.png" alt="Rock Image" class="choice-img">
                 <h2 class="choice-title">ROCK</h2>
             </div>
-            <div class="choice-container">
+            <div class="valid choice-container" id="paper">
                 <img src="./Assets/paper.png" alt="Rock Image" class="choice-img">
                 <h2 class="choice-title">PAPER</h2>
             </div>
-            <div class="choice-container">
+            <div class="valid choice-container" id="scissors">
                 <img src="./Assets/scissors.png" alt="Rock Image" class="choice-img">
                 <h2 class="choice-title">SCISSORS</h2>
             </div>
+
+        <button class="btn hide" id="confirm-button">Confirm choice</button>
+        <button class="btn hide" id="restart-button">Restart game</button>
+
         </div>
+
+
     </div>
 </body>
 <script src="./js/script.js"></script>
